@@ -1,0 +1,18 @@
+
+var obj = {
+  "id": 4,"name":"surya",
+   "id": 10,"name":"prabhu",
+   "id": 5,"name":"ravi",
+    "id": 10,"name":"akash"
+}
+
+var items = Object.keys(dict).map(function(key) {
+  return [key, dict[key]];
+});
+items.sort(function(first, second) {
+  return first-second;
+});
+
+
+console.log(items);
+
