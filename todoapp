@@ -1,0 +1,60 @@
+import React from 'react';
+import {
+  Stylesheet,
+  View,
+  TextInput,
+  Button,
+  FlatList,
+}from 'react-native';
+const App= ()=> {
+  const[text,setText]=React.useState(null);
+  const[list,setlext]=React.useState([]);
+console.log(list);
+handleSave=()=>{
+  setList[list,{keys: '${list.length+1}', data:text}]);
+};
+
+  return (
+    <View style={Styles.container}>
+    <TextInput
+    style={Stylesheet.textBox}
+    onChangeText={text =>setText(text)}
+    value=
+    
+    {text}
+    />
+    <Button
+    title="Add"
+    onPress={handleSave}
+    />
+    <FlatList
+    data={list}
+    renderItem={({item}) =>
+    <view>
+    <TextInput
+    styles={styles.item}
+    onChangeText={() =>{}}
+    >
+
+    {item && item.data}
+    </TextInput>
+    </view>
+  }
+  >
+  </FlatList>
+  </View>
+
+  );
+};
+const styles=StyleSheet.create({
+  container: {
+    flex=1,
+    paddingTop:100,
+  },
+  textBox:{
+    height:40,
+    borderColor="gray",
+    borderWidth:1,
+  },
+});
+export default App;
