@@ -11,7 +11,7 @@ const App= ()=> {
   const[list,setlext]=React.useState([]);
 console.log(list);
 handleSave=()=>{
-  setList[list,{keys: '${list.length+1}', data:text}]);
+  setList[list,{key: '${list.length+1}', data:text}]};;
 };
 
   return (
